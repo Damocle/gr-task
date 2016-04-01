@@ -27,7 +27,7 @@ img { max-width: 100%; height: auto; width: auto;}
 /* 文字排版及定位 */
 .ff0 {font-family: arial;}
 .ff1 {font-family: "Microsoft YaHei";}
-.ff2 {font-family: "Hiragino Sans GB"}
+.ff2 {font-family: "Hiragino Sans GB";}
 .f12 {font-size: 12px;}
 .f13 {font-size: 13px;}
 .f14 {font-size: 14px;}
@@ -63,33 +63,85 @@ img { max-width: 100%; height: auto; width: auto;}
 
 @media screen and (max-width:1250px) {
 	.gr-container {margin: 0 auto; width: 960px;}
-	/*.gr-body .bd-main {width: 960px;}*/
-	/*.gr-body .bd-main .tab {width: 735px;}*/
+	.gr-body .bd-product {width: 1065px; margin-right: 107px;}
+	.gr-body .bd-product .topic {margin-left: 70px; width: 285px;}
+	.gr-body .topic .team {width: 172px; height: 235px;}
+	/*.gr-body .bd-workPlace {overflow: hidden;}*/
+	.gr-body .bd-workPlace .box {width: 1616px; margin:0 -140px;}
+	.gr-body .bd-main {width: 960px;}
+	.gr-body .bd-main .tab {width: 735px;}
 	
 }
 
 @media screen and (min-width:1250px) {
 	.gr-container {margin: 0 auto; width: 1026px;}
-	/*.gr-body .bd-main {width: 1216px;}*/
-	/*.gr-body .bd-main .tab {width: 970px;}*/
+	.gr-body .bd-product {width: 1270px;  margin-right: 123px;}
+	.gr-body .bd-product .topic {margin-left: 84px; width: 339px;}
+	.gr-body .topic .team {width: 239px; height: 235px;}
+	/*.gr-body .bd-workPlace {overflow: hidden;}*/
+	.gr-body .bd-workPlace .box {width: 1616px; margin: 0 auto;}
+	.gr-body .bd-main {width: 1216px;}
+	.gr-body .bd-main .tab {width: 970px;}
 }
 
 /* gr-header */
 .gr-header {}
 .gr-header .hd-warm {height: 36px; background: #f3f3f3;}
-.gr-header .hd-head {height: 89px; border: 1px solid red;}
+.gr-header .hd-warm a {padding-left: 12px; color: #21a557; line-height: 36px;}
+.gr-header .hd-warm span {position: relative; top: 12px; right: 0; float: right; width: 63px; height: 12px; text-indent: 15px; color: #333; background: url(../images/spirit.png) no-repeat -287px -21px;} 
 
 
+.gr-header .hd-head .logo h1 {margin: 30px 0 37px; width: 265px; text-indent: 84px; color: #333; background: url(../images/spirit.png) no-repeat -228px 3px;}
+.gr-header .login .focus {margin: 30px 0 37px;}
+.gr-header .focus input {margin-right: 14px; border: 0; border-radius: 2px; width: 54px; height: 21px; background: url(../images/spirit.png) no-repeat -25px 0;}
+.gr-header .focus input:hover {background: url(../images/spirit.png) no-repeat -25px -21px;}
+.gr-header .focus span {position: relative; top: -6px;font: 12px "宋体"; color: #666;}
 
+.gr-header .sign-in {position: fixed; top: 0; left: 0; z-index: 998; width: 100%; height: 100%;}
+.gr-header .shade {width: 100%; height: 100%; background:rgba(0,0,0,0.8)}
+.gr-header .form {margin: 144px 0 0 -193px; top: 0; left: 50%; right: 50%; z-index: 999; width: 387px; height: 288px; background: #fff;}
+.gr-header .form h2 {margin: 30px 0 20px 39px; color: #444;}
+.gr-header .form input {margin:0 0 15px 40px;width: 292px; height: 42px; border: 1px solid #dfdfdf; box-shadow: inset 1px 1px 2px 1px #f1f1f1;}
+.gr-header .form input.submit {margin-top: 14px; background: url(../images/spirit.png) no-repeat 0 -48px; border: 0; box-shadow: none;}
+.gr-header .form label {position: absolute; left: 51px; font: 16px/42px "Microsoft YaHei"; color: #ccc;}
 
-
+.gr-header .nav li { float: left; margin: 30px 0;}
+.gr-header .nav li a {margin-left: 56px; font: 16px "Hiragino Sans GB"; color: #666;}
+.gr-header .nav li a:hover {color: #39a030;}
+.gr-header .nav li span {display: block; margin: 0 12px 0 31px; width: 19px; height: 19px; background: url(../images/spirit.png) no-repeat 0 1px;}
+.gr-header .nav li span:hover {background: url(../images/spirit.png) no-repeat 0 -19px;}
 
 /* gr-body */
 .gr-body {}
-.gr-body .bd-wrap {height: 460px; border: 1px solid green;}
-.gr-body .bd-product {height: 295px; border: 1px solid yellow;}
-.gr-body .bd-workPlace {height: 222px; border: 1px solid purple;}
-.gr-body .bd-main {min-height: 1550px;border: 1px solid blue;}
-.gr-body .bd-main .tab {border: 1px solid red; min-height: 1550px;}
+.gr-body .bd-wrap {height: 460px;}
+.gr-body .bd-wrap .box img {position: absolute; height: 460px; opacity: 0; filter: alpha(opacity: 0);}
+.gr-body .bd-wrap .box .active {z-index: 1; opacity: 100; filter: alpha(opacity: 100);}
+.gr-body .count {position: absolute; bottom: 20px; left: 50%; right: 50%; z-index: 2; margin-left: -31px; width: 63px;}
+.gr-body .count li {margin-left: 11px;  float: left; border-radius: 50%; width: 10px; height: 10px; background: #fff; cursor: pointer;}
+.gr-body .count .active {background: #000;}
+
+.gr-body .bd-product {margin-top: 60px;}
+.gr-body .topic {height: 235px;}
+.gr-body .topic .icon {margin: 7px 20px 0 0; width: 80px; height: 228px; background: url(../images/spirit.png) no-repeat;}
+.gr-body .topic .icon1 {background-position: 0 -102px;}
+.gr-body .topic .icon2 {background-position: -100px -102px;}
+.gr-body .topic .icon3 {background-position: -200px -102px;}
+.gr-body .topic .team h3 {margin-bottom: 10px; font: 22px/22px "Microsoft YaHei"; color: #333;}
+.gr-body .topic .team p {margin-bottom: 34px; text-indent: 1px; font: 14px/24px "Microsoft YaHei"; color: #666;}
+.gr-body .topic .team a {color: #39a030;}
+.gr-body .topic .team a:hover {text-decoration: underline;}
+
+.gr-body .bottom {background: #f8f8f8;}
+.gr-body .bd-workPlace .box img {float: left; margin-top: 4px; margin-right: 4px; height: 220px;}
+.gr-body .bd-workPlace .box .last {margin-right: 0;}
+
+.gr-body .bd-main {min-height: 1550px; margin-top: 81px;}
+.gr-body .bd-main .tab {min-height: 1550px;}
+.gr-body .tab .tab-btn {width: 400px; height: 50px; box-shadow: 1px 1px 1px #dcdcdc;}
+.gr-body .tab li {float: left; width: 200px; text-align: center; background: #fff; #color: #666; line-height: 50px;}
+.gr-body .tab .active {background: #39a030; color: #fff;}
+.gr-body .bd-main .sidebar {width: 223px; background: #fff; box-shadow: 0 1px 1px 1px #e6e6e6;}
+
+
 /* gr-footer */
 .gr-footer {height: 262px; background: #2c3339;}
