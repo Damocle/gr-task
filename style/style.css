@@ -69,7 +69,7 @@ img { max-width: 100%; height: auto; width: auto;}
 	/*.gr-body .bd-workPlace {overflow: hidden;}*/
 	.gr-body .bd-workPlace .box {width: 1616px; margin:0 -140px;}
 	.gr-body .bd-main {width: 960px;}
-	.gr-body .bd-main .tab {width: 735px;}
+	.gr-body .bd-main .tab {width: 730px;}
 	
 }
 
@@ -135,13 +135,13 @@ img { max-width: 100%; height: auto; width: auto;}
 .gr-body .bd-workPlace .box img {float: left; margin-top: 4px; margin-right: 4px; height: 220px;}
 .gr-body .bd-workPlace .box .last {margin-right: 0;}
 
-.gr-body .bd-main { min-height: 1550px; margin-top: 81px;}
+.gr-body .bd-main {min-height: 1550px; margin-top: 81px;}
 .gr-body .bd-main .tab {min-height: 1550px;}
 .gr-body .tab .tab-btn {margin-bottom: 8px; width: 400px; height: 50px; box-shadow: 1px 1px 1px #dcdcdc;}
 .gr-body .tab li {float: left; width: 200px; text-align: center; background: #fff; #color: #666; line-height: 50px;}
 .gr-body .tab .active {background: #39a030; color: #fff;}
 
-.gr-body .bd-main .content {margin-left: -18px;}
+.gr-body .bd-main .content {/*border: 1px solid red; */margin-left: -18px;}
 .gr-body .content .course {float: left; margin: 18px 0 0 18px; width: 225px; height: 228px; background: #fff; box-shadow: 0 1px 1px 1px #e6e6e6;}
 .gr-body .course img {margin: 1px 1px; width: 223px; height: 124px;}
 .gr-body .course p , .gr-body .course .publisher {font: 12px/22px "Microsoft YaHei"; text-indent: 5px;}
