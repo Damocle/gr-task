@@ -97,14 +97,14 @@ img { max-width: 100%; height: auto; width: auto;}
 .gr-header .focus input:hover {background: url(../images/spirit.png) no-repeat -25px -21px;}
 .gr-header .focus span {position: relative; top: -6px;font: 12px "宋体"; color: #666;}
 
-.gr-header .sign-in {position: fixed; top: 0; left: 0; z-index: 998; width: 100%; height: 100%;}
-.gr-header .shade {width: 100%; height: 100%; background:rgba(0,0,0,0.8)}
-.gr-header .form {margin: 144px 0 0 -193px; top: 0; left: 50%; right: 50%; z-index: 999; width: 387px; height: 288px; background: #fff;}
+.gr-header .sign-in {position: fixed; top: 0; left: 0; z-index: 98; width: 100%; height: 100%;}
+.gr-header .shade {width: 100%; height: 100%; background:rgba(0,0,0,0.8);}
+.gr-header .form {margin: 144px 0 0 -193px; top: 0; left: 50%; right: 50%; z-index: 99; width: 387px; height: 288px; background: #fff;}
 .gr-header .form h2 {margin: 30px 0 20px 39px; color: #444;}
 .gr-header .form input {margin:0 0 15px 40px;width: 292px; height: 42px; border: 1px solid #dfdfdf; box-shadow: inset 1px 1px 2px 1px #f1f1f1;}
 .gr-header .form input.submit {margin-top: 14px; background: url(../images/spirit.png) no-repeat 0 -48px; border: 0; box-shadow: none;}
 .gr-header .form label {position: absolute; left: 51px; font: 16px/42px "Microsoft YaHei"; color: #ccc;}
-
+.gr-header .form .close {position: absolute; z-index: 100; top: 3px; right: 1px; width: 23px; height: 22px; background: url(../images/spirit.png) no-repeat -228px -23px;}
 .gr-header .nav li { float: left; margin: 30px 0;}
 .gr-header .nav li a {margin-left: 56px; font: 16px "Hiragino Sans GB"; color: #666;}
 .gr-header .nav li a:hover {color: #39a030;}
@@ -163,6 +163,13 @@ img { max-width: 100%; height: auto; width: auto;}
 .gr-body .video .title {color: #666; margin-top: 20px; text-indent: 22px;}
 .gr-body .video .showPic {margin: 9px 0 0 22px; width: 180px; height: 110px;}
 .gr-body .video .showPic .play {position: absolute; top: 32px; left: 66px;}
+
+.gr-body .popupvideo {display: none; position: fixed; top: 0; left: 0; z-index: 998; width: 100%; height: 100%;}
+.gr-body .popupvideo .shade {width: 100%; height: 100%; background:rgba(0,0,0,.8); }
+.gr-body .popupvideo .popup {position: absolute; top: 0;left: 50%; right: 50%; margin-left: -475px; z-index: 999; width: 950px; height: 675px;background: #fff;}
+.gr-body .popup p {margin: 29px 0 22px 49px; color: #444;}
+.gr-body .popup video {margin-left: 31px; width: 889px; height: 567px;}
+.gr-body .popup .close {position: absolute; z-index: 1000; top: 6px; right: 5px; width: 23px; height: 22px; background: url(../images/spirit.png) no-repeat -228px -23px;}
 
 .gr-body .sidebar .hostList {background: #fff;}
 .gr-body .hostList .list {padding: 19px 20px 0 20px;}
