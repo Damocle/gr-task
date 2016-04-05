@@ -72,6 +72,61 @@ GLOBAL.Cookie.removeCookie = function(name) {
 	GLOBAL.Cookie.setCookie(name, " ", -1);
 }
 
+// Ajax相关
+GLOBAL.namespace("Ajax");
+/*
+	get函数参数： 
+		url: 请求地址
+		parameter： 请求参数
+		func: 获取文件的处理函数
+*/
+GLOBAL.Ajax.get = function(url, parameter, func) {
+	var xhr;
+	try {
+		xhr = new XMLHttpRequest();
+	} catch (tryMs) {
+		try {
+			xhr = new ActiceXObject("Msxml2.XMLHTTP");
+		} catch (otherMs) {
+			try {
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (failed) {
+				xhr = false;
+			}
+		} 
+	}
+
+	xhr.open("get", url + "?" + setParam(parameter), true);
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                func(xhr.responseText);
+            } else {
+                alert("抱歉，请求失败");
+            }
+        }
+	};
+	xhr.send(null);
+}
+
+function setParam(data) {
+	var name,
+		arr = [];
+		
+	if (!data) return false;
+	for (name in data) {
+		// 若所获属性来自data对象原型链而非定义在对象本身 跳过该循环
+		if (!data.hasOwnProperty(name)) continue; 
+		// 对象属性为function 跳过该循环
+		if (typeof data[name] == 'function') continue;
+
+		var value = data[name].toString();
+		arr.push(name + '=' + value);
+	}
+
+	return arr.join('&');
+}
+
 // 扩展window.onload
 function addLoadEvent(func) {
 	var oldOnload = window.onload;
